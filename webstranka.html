@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja stránka </title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+    nav a:hover {
+      color: red;
+    }
+
+    section {
+      display: none;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    #uvod {
+      display: block; 
+    }
+
+    
+    .blok1 {
+      background-color: #e3f2fd;
+      padding: 20px;
+      margin: 10px;
+    }
+    .blok2 {
+      background-color: #ffe0b2;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* Tabuľky */
+    .tab1 {
+      border: 2px solid green;
+      background-color: #f0fff0;
+      margin-bottom: 20px;
+    }
+    .tab2 {
+      border: 2px dashed blue;
+      background-color: #f0f8ff;
+    }
+    table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    td, th {
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Štýl pre text */
+    .text {
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigácia -->
+  <nav>
+    <a href="#uvod">Úvod</a>
+    <a href="#o-mne">O mne</a>
+    <a href="#informacie">Informácie</a>
+    <a href="#zaluby">Záľuby</a>
+    <a href="#galeria">Galéria</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#text">Text</a>
+  </nav>
+
+  <!-- Sekcie -->
+  <section id="uvod">
+    <div class="blok1">
+      <h2>Vitajte na mojej stránke!</h2>
+      <p>1.blok s textom</p>
+    </div>
+    <div class="blok2">
+      <h2>O stránke</h2>
+      <p>Tu nájdete informácie o mne, mojich záľubách a ďalších témach.</p>
+    </div>
+  </section>
+
+  <section id="o-mne">
+    <h1>O mne</h1>
+    <p>Volám sa Šimon a mám rád programovanie, knihy a prírodu.</p>
+  </section>
+
+  <section id="informacie">
+    <h1>Informácie</h1>
+    <ol>
+      <li>Som študent</li>
+      <li>Študujem na Gymnáziu J. Hollého v Trnave</li>
+      <li>Bývam v Hnrčiarovciach nad Parnou</li>
+    </ol>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="zaluby">
+    <h1>Moje záľuby</h1>
+    <table class="tab1">
+      <tr><th>Šport</th><th>Frekvencia</th></tr>
+      <tr><td>Futbal</td><td>2x týždenne</td></tr>
+      <tr><td>Turistika</td><td>1x mesačne</td></tr>
+    </table>
+
+    <table class="tab2">
+      <tr><th>Koníček</th><th>Úroveň</th></tr>
+      <tr><td>Maľovanie</td><td>Začiatočník</td></tr>
+      <tr><td>Šach</td><td>Pokročilý</td></tr>
+    </table>
+  </section>
+
+  <section id="galeria">
+    <h1>Galéria</h1>
+    <p>Tu budú moje fotografie a obrázky (aktuálne prázdne).</p>
+  </section>
+
+  <section id="kontakt">
+    <h1>Kontakt</h1>
+    <p>Email: libich787@gmail.com</p>
+  </section>
+
+  <section id="text">
+    <div class="text">
+      <h1>Upravený text</h1>
+      <p><mark>Toto je <del>ukážkový</del> text</mark> s použitím vlastného štýlu. Je formátovaný s iným písmom, veľkosťou a farbou.</p>
+      <p>Text môže obsahovať napríklad zvýraznenie dôležitých častí <strong>tučné</strong>, <em>kurzívu</em> alebo odkazy ako <a href="#">tento</a>.</p>
+    </div>
+  </section>
+
+</body>
+</html>
